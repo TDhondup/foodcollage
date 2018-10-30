@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asian Foods</title>
+
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background: black;
+		}
+
+		html, body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container{
+			background: linear-gradient(276deg, black, white, black);
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 50px 1fr 1fr 1fr ;
+			grid-template-areas:
+				"h h"
+				"f1 f2"
+				"s s"
+				"f3 f4";
+				grid-gap: 10px;
+				padding: 10px;
+
+		}
+
+		.item{
+		}
+
+		#food1{
+			grid-area: f1;
+			background: url(https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201205-xl-spicy-chicken-chili.jpg?itok=r_tCudBZ);
+			background-size: cover;
+			background-position: center;
+		}
+		#food2{
+			grid-area: f2;
+			background: url(https://www.lecremedelacrumb.com/wp-content/uploads/2017/02/korean-beef-noodles-105-1.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#scenery{
+			grid-area: s;
+			background: url(http://www.accomodations.asia/bigimg/3/31436_oriental-wallpaper.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#food3{
+			grid-area: f3;
+			background: url(https://www.tabletmag.com/wp-content/files_mf/taizu_israel_080813_820px.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#food4{
+			grid-area: f4;
+			background: url(http://cdn.theeverygirl.com/wp-content/uploads/2016/05/AsianFood_TEASER.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#title{
+			grid-area: h;
+			background-size: cover;
+			background-position: center;
+			font-family: "Trebuchet MS";
+			font-weight: 100;
+			text-align: center;	
+			display: grid;
+			justify-content: center;
+			align-items: center;
+		}
+
+		h1{
+			margin: 0px;
+			padding: 0px;
+		}
+
+	
+			
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="item" id="food1"></div>
+
+	<div class="item" id="food2"></div>
+
+	<div class="item" id="scenery"></div>
+
+	<div class="item" id="food3"></div>
+
+	<div class="item" id="food4"></div>
+
+	<div class="item" id="title">
+		<h1>A TASTE OF ASIAN CULTURE</h1>
+	</div>
+
+</div>
+</body>
+</html>
